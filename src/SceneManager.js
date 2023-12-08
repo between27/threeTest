@@ -9,7 +9,7 @@ const scene = new THREE.Scene();
 const gameWindow = document.getElementById('game-renderer');
 
 const renderer = new THREE.WebGLRenderer();
-renderer.setSize( window.innerWidth, window.innerHeight );
+renderer.setSize( window.innerWidth, window.innerHeight*9/10);
 gameWindow.appendChild( renderer.domElement );
 
 scene.add(SpriteList.playerSprite, SpriteList.tree, SpriteList.tree2, SpriteList.tree3);
@@ -19,7 +19,7 @@ const clock = new THREE.Clock
 
 // Camera :
 
-const SCREEN_WIDTH = window.innerWidth;
+const SCREEN_WIDTH = window.innerWidth ;
 const SCREEN_HEIGHT = window.innerHeight;
 const FOV = 75; 
 const SCREEN_ASPECT = SCREEN_WIDTH / SCREEN_HEIGHT;
